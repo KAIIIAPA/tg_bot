@@ -9,7 +9,7 @@
 
 1. Реагирует на команды /start и /help, отправляя приветственное сообщение.
 
-![1](https://github.com/user-attachments/assets/17a2ca33-6f39-4ecb-89cc-ec550726477e)
+![1](https://github.com/user-attachments/assets/cf7a9e23-e63a-42e1-9b08-1bd7717de9c3)
 
 2. Реагирует на изображения, отправляемые пользователем, и предлагает варианты обработки:
 
