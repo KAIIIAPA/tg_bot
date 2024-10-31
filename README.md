@@ -9,23 +9,23 @@
 
 1. Реагирует на команды /start и /help, отправляя приветственное сообщение.
 
-![1](https://github.com/user-attachments/assets/cf7a9e23-e63a-42e1-9b08-1bd7717de9c3)
+   ![1](https://github.com/user-attachments/assets/cf7a9e23-e63a-42e1-9b08-1bd7717de9c3)
 
 2. Реагирует на изображения, отправляемые пользователем, и предлагает варианты обработки:
 
-![image](https://github.com/user-attachments/assets/640b7276-11eb-478d-8b83-df8ea4011cbd)
+   ![2](https://github.com/user-attachments/assets/25113b66-18c6-4d05-af9f-bfb54feb3425)
 
 2.1. Пикселизировать изображения.
 
-![image](https://github.com/user-attachments/assets/ec967dbd-e22a-408e-ba2e-123795ba911e)
+  ![3](https://github.com/user-attachments/assets/a45f38cc-17eb-449c-9c9a-5f6c83c958e5)
 
 2.2. Преобразовывать изображения в ASCII-арт.
 
-![image](https://github.com/user-attachments/assets/e85b1d97-33b7-4b95-a171-5ad6b2902448)
+  ![4](https://github.com/user-attachments/assets/faa0f0c0-2b96-460d-aed8-625b7f0c8c6c)
 
 2.3. Инвертировать изображение.
 
-![image](https://github.com/user-attachments/assets/faf4aef3-83e7-460b-aa06-3bfcb260b8eb)
+  ![5](https://github.com/user-attachments/assets/3a405d8c-4597-4460-b396-071b8d03a952)
 
 # Как запустить
   
