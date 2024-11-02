@@ -2,9 +2,10 @@ from additional_material import user_states
 from PIL import Image
 import io
 
-def pixelate_and_send(message, bot):
+def pixelate_and_send(bot, message):
     """
     Функция, которая пикселизирует изображение и отправляет его обратно пользователю.
+    :param bot: Bot.
     :param message: Сообщение от пользователя.
     :return: Обработанное изображение возвращается пользователю
     """
