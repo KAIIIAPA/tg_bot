@@ -2,8 +2,7 @@
 
   ### Многофункциональный телеграм-бот
 
-  ### Данный бот сейчас умеет работать с изображениями и делать ASCII-арт, Пикселизацию и Инверсию изображения. 
-
+  Данный бот сейчас умеет принимать и обрабатывать изображения.
 
 # Возможности телеграм-бота:
 
@@ -13,29 +12,33 @@
 
 ### 2. Реагирует на изображения, отправляемые пользователем, и предлагает варианты обработки:
 
-   ![2](https://github.com/user-attachments/assets/748878b5-7e0a-430e-8874-903609cb097c)
+   ![2](https://github.com/user-attachments/assets/732a9403-598e-42fd-bab5-89237e30d2e5)
 
 ### 2.1. Пикселизировать изображения.
 
-  ![3](https://github.com/user-attachments/assets/30e97b0f-75d9-4f59-834c-e11dc12db94c)
+  ![3](https://github.com/user-attachments/assets/edc102af-b662-4c6d-9f4e-21bb229f6023)
 
 ### 2.2. Преобразовывать изображения в ASCII-арт.
 
-  ![4](https://github.com/user-attachments/assets/566f3cfb-cfb4-4188-aaf0-0ce5e0bc13d1)
+  ![4](https://github.com/user-attachments/assets/e8c37fb3-9181-4567-8a3b-728c26335005)
 
 ### 2.3. Инвертировать изображение.
 
-  ![5](https://github.com/user-attachments/assets/7d56d308-6793-4f3c-8da9-9629c3fc2ffc)
+  ![5](https://github.com/user-attachments/assets/663fff45-d33d-425e-a3a1-8106d8df5a70)
 
 ### 2.4. Создает отраженную копию изображения.
 
   #### По горизонтали:
 
-  ![6](https://github.com/user-attachments/assets/d9f29f3a-40d1-41a0-8dd5-a6b5f2612e12)
+  ![6](https://github.com/user-attachments/assets/9d4b3b59-6219-49a7-bd0a-6fd3a71f9d14)
 
   #### По вертикали:
 
-  ![7](https://github.com/user-attachments/assets/4ba9382a-fff5-4ec8-b6b1-93c24978e8d7)
+  ![7](https://github.com/user-attachments/assets/d8230c6b-7d21-4093-b1ea-2bd8eb634b3b)
+
+### 2.5. Преобразовать изображение в тепловую карту (от синего (холодные области) до красного (теплые области)).
+
+  ![8](https://github.com/user-attachments/assets/c9a9fc34-0623-4dcf-831a-dbaf2141eb43)
 
 # Как запустить
   
