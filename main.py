@@ -13,7 +13,7 @@ def message_welcome(message):
 def handle_photo_message(message):
     handle_photo(bot, message)
 
-@bot.callback_query_handler(func=lambda call: call.data in ['pixelate', 'ascii', 'invert', 'mirror'])
+@bot.callback_query_handler(func=lambda call: call.data in ['pixelate', 'ascii', 'invert', 'mirror', 'heatmap'])
 def callback_query_message(call):
     callback_query(bot, call)
 

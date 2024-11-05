@@ -79,6 +79,7 @@ def pixels_to_ascii(image, simbols):
 
 def next_ascii_and_send(message, call, bot):
     """
+    :param bot: Bot
     :param message: Сообщение от пользователя (набор символов).
     :param call: Сообщение от пользователя (картинка).
     :return: Возвращает результат функции ascii_and_send(message, simbols)

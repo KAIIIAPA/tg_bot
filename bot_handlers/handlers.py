@@ -4,6 +4,7 @@ from bot_methods.invert_image import invert_colors
 from bot_methods.pixelate_image import pixelate_and_send
 from bot_methods.reflected_image_horizontally import reflected_image_horizontally
 from bot_methods.reflected_image_vertically import reflected_image_vertically
+from bot_methods.heatmap_image import image_is_converted_to_heatmap
 from bot_keyboard.keyboard_bot import get_options_keyboard_1, get_options_keyboard_2
 
 
@@ -48,6 +49,9 @@ def callback_query(bot, call):
     elif call.data == "mirror":
         bot.reply_to(call.message, "Please select which mirrored copy of the image you would like to make.",
                      reply_markup=get_options_keyboard_2())
+    elif call.data == "heatmap":
+        bot.answer_callback_query(call.id, "The image is converted to a heat map...")
+        image_is_converted_to_heatmap(bot, call.message)
 
 def mirror_callback(bot, call):
     """
