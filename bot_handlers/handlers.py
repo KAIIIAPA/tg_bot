@@ -6,6 +6,7 @@ from bot_methods.reflected_image_horizontally import reflected_image_horizontall
 from bot_methods.reflected_image_vertically import reflected_image_vertically
 from bot_methods.heatmap_image import image_is_converted_to_heatmap
 from bot_keyboard.keyboard_bot import get_options_keyboard_1, get_options_keyboard_2
+from bot_methods.resize_for_sticker import resize_for_sticker
 
 
 def send_welcome(bot, message):
@@ -52,6 +53,9 @@ def callback_query(bot, call):
     elif call.data == "heatmap":
         bot.answer_callback_query(call.id, "The image is converted to a heat map...")
         image_is_converted_to_heatmap(bot, call.message)
+    elif call.data == "sticker":
+        bot.answer_callback_query(call.id, "The image is resize for sticker...")
+        resize_for_sticker(bot, call.message)
 
 def mirror_callback(bot, call):
     """
