@@ -1,13 +1,17 @@
 import telebot
 
 from additional_material import TOKEN
-from bot_handlers.handlers import send_welcome, handle_photo, callback_query, mirror_callback
+from bot_handlers.handlers import send_welcome, handle_photo, callback_query, mirror_callback, handle_joke
 
 bot = telebot.TeleBot(TOKEN)
 
 @bot.message_handler(commands=['start', 'help'])
 def message_welcome(message):
     send_welcome(bot, message)
+
+@bot.message_handler(commands=['joke'])
+def handle_handle_joke(message):
+    handle_joke(bot, message)
 
 @bot.message_handler(content_types=['photo'])
 def handle_photo_message(message):

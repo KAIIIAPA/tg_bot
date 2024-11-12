@@ -1,6 +1,7 @@
 from additional_material import user_states
 from bot_methods.ascii import next_ascii_and_send
 from bot_methods.invert_image import invert_colors
+from bot_methods.joke_func import joke_mes_func
 from bot_methods.pixelate_image import pixelate_and_send
 from bot_methods.reflected_image_horizontally import reflected_image_horizontally
 from bot_methods.reflected_image_vertically import reflected_image_vertically
@@ -16,7 +17,16 @@ def send_welcome(bot, message):
     :param message: Команда /start или /help.
     :return: Приветственное сообщение.
     """
-    bot.reply_to(message, "Send me an image, and I'll provide options for you!")
+    bot.reply_to(message, "Для работы с изображением просто отправьте его мне. \n"
+                          "Если хотите получить шутку введите команду: /joke")
+
+def handle_joke(bot, message):
+    """
+    Функция для отправки случайной шутки пользователю.
+    :param bot: Бот.
+    :param message:  Сообщение от пользователя.
+    """
+    bot.reply_to(message, joke_mes_func())
 
 def handle_photo(bot, message):
     """
