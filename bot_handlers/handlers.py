@@ -1,5 +1,6 @@
 from additional_material import user_states
 from bot_methods.ascii import next_ascii_and_send
+from bot_methods.compliments_func import compliments_mes_func
 from bot_methods.invert_image import invert_colors
 from bot_methods.joke_func import joke_mes_func
 from bot_methods.pixelate_image import pixelate_and_send
@@ -18,15 +19,24 @@ def send_welcome(bot, message):
     :return: Приветственное сообщение.
     """
     bot.reply_to(message, "Для работы с изображением просто отправьте его мне. \n"
-                          "Если хотите получить шутку введите команду: /joke")
+                          "Если хотите получить шутку введите команду: /Random_Joke.\n"
+                          "Если хотите получить комплимент введите команду: /Random_Compliment.\n")
 
-def handle_joke(bot, message):
+def random_joke(bot, message):
     """
     Функция для отправки случайной шутки пользователю.
     :param bot: Бот.
     :param message:  Сообщение от пользователя.
     """
     bot.reply_to(message, joke_mes_func())
+
+def random_compliments(bot, message):
+    """
+    Функция для отправки случайного комплимента пользователю.
+    :param bot: Бот.
+    :param message:  Сообщение от пользователя.
+    """
+    bot.reply_to(message, compliments_mes_func())
 
 def handle_photo(bot, message):
     """
