@@ -2,7 +2,7 @@ import telebot
 
 from additional_material import TOKEN
 from bot_handlers.handlers import (send_welcome, handle_photo, callback_query, mirror_callback, random_joke,
-                                   random_compliments)
+                                   random_compliments, random_flip_a_coin)
 
 bot = telebot.TeleBot(TOKEN)
 
@@ -17,6 +17,11 @@ def handle_random_joke(message):
 @bot.message_handler(commands=['Random_Compliment'])
 def handle_random_compliments(message):
     random_compliments(bot, message)
+
+
+@bot.message_handler(commands=['Flip_a_Coin'])
+def handle_flip_a_coin(message):
+    random_flip_a_coin(bot, message)
 
 @bot.message_handler(content_types=['photo'])
 def handle_photo_message(message):

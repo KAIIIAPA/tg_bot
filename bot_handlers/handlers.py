@@ -1,6 +1,7 @@
 from additional_material import user_states
 from bot_methods.ascii import next_ascii_and_send
 from bot_methods.compliments_func import compliments_mes_func
+from bot_methods.flip_a_coin import flip_a_coin_func
 from bot_methods.invert_image import invert_colors
 from bot_methods.joke_func import joke_mes_func
 from bot_methods.pixelate_image import pixelate_and_send
@@ -20,7 +21,8 @@ def send_welcome(bot, message):
     """
     bot.reply_to(message, "Для работы с изображением просто отправьте его мне. \n"
                           "Если хотите получить шутку введите команду: /Random_Joke.\n"
-                          "Если хотите получить комплимент введите команду: /Random_Compliment.\n")
+                          "Если хотите получить комплимент введите команду: /Random_Compliment.\n"
+                          "Если хотите подбросить монетку введите команду: /Flip_a_Coin.\n")
 
 def random_joke(bot, message):
     """
@@ -37,6 +39,9 @@ def random_compliments(bot, message):
     :param message:  Сообщение от пользователя.
     """
     bot.reply_to(message, compliments_mes_func())
+
+def random_flip_a_coin(bot, message):
+    bot.reply_to(message, flip_a_coin_func())
 
 def handle_photo(bot, message):
     """
