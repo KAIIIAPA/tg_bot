@@ -18,7 +18,6 @@ def handle_random_joke(message):
 def handle_random_compliments(message):
     random_compliments(bot, message)
 
-
 @bot.message_handler(commands=['Flip_a_Coin'])
 def handle_flip_a_coin(message):
     random_flip_a_coin(bot, message)
@@ -35,6 +34,5 @@ def callback_query_message(call):
 @bot.callback_query_handler(func=lambda call: call.data in ["horizontal", "vertical"])
 def mirror_callback_message(call):
     mirror_callback(bot, call)
-
 
 bot.polling(none_stop=True)

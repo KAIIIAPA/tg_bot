@@ -41,6 +41,12 @@ def random_compliments(bot, message):
     bot.reply_to(message, compliments_mes_func())
 
 def random_flip_a_coin(bot, message):
+    """
+    Функция для отправки результата подбрасывания монеты.
+    :param bot: Бот.
+    :param message: Сообщение от пользователя.
+    :return: Результат подбрасывания монеты.
+    """
     bot.reply_to(message, flip_a_coin_func())
 
 def handle_photo(bot, message):
