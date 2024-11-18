@@ -24,6 +24,7 @@ def send_welcome(bot, message):
                           "Если хотите получить комплимент введите команду: /Random_Compliment.\n"
                           "Если хотите подбросить монетку введите команду: /Flip_a_Coin.\n")
 
+
 def random_joke(bot, message):
     """
     Функция для отправки случайной шутки пользователю.
@@ -31,6 +32,7 @@ def random_joke(bot, message):
     :param message:  Сообщение от пользователя.
     """
     bot.reply_to(message, joke_mes_func())
+
 
 def random_compliments(bot, message):
     """
@@ -40,6 +42,7 @@ def random_compliments(bot, message):
     """
     bot.reply_to(message, compliments_mes_func())
 
+
 def random_flip_a_coin(bot, message):
     """
     Функция для отправки результата подбрасывания монеты.
@@ -48,6 +51,7 @@ def random_flip_a_coin(bot, message):
     :return: Результат подбрасывания монеты.
     """
     bot.reply_to(message, flip_a_coin_func())
+
 
 def handle_photo(bot, message):
     """
@@ -59,6 +63,7 @@ def handle_photo(bot, message):
     user_states[message.chat.id] = {'photo': message.photo[-1].file_id}
     bot.reply_to(message, "I got your photo! Please choose what you'd like to do with it.",
                  reply_markup=get_options_keyboard_1())
+
 
 def callback_query(bot, call):
     """
@@ -87,6 +92,7 @@ def callback_query(bot, call):
     elif call.data == "sticker":
         bot.answer_callback_query(call.id, "The image is resize for sticker...")
         resize_for_sticker(bot, call.message)
+
 
 def mirror_callback(bot, call):
     """
